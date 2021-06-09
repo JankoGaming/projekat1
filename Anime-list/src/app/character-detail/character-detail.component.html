@@ -1,0 +1,16 @@
+<div *ngIf="character">
+    <h2>{{character.name | uppercase}} Details</h2>
+    <div><span>id:</span>{{character.id}}</div>
+    <div><span>detail:</span>{{character.detail}}</div>
+    <div>
+    <label for="character-name">Character name: </label>
+    <input id="character-name" ([ngModel])="character.name" placeholder="Character name">
+    </div>
+    <button (click)="metoda()">
+        Add Character
+    </button>
+    
+    <button (click)="goBack()">
+        Go Back
+    </button>
+</div>
